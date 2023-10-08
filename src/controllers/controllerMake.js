@@ -1,4 +1,4 @@
-const apiUrl = 'https://tiny-pear-chimpanzee-garb.cyclic.app/'
+const apiUrl = 'https://tiny-pear-chimpanzee-garb.cyclic.app'
 
 const fetchControllerGet = async () => {
 		try {
