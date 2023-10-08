@@ -2,7 +2,7 @@ const apiUrl = 'https://tiny-pear-chimpanzee-garb.cyclic.app'
 
 const fetchControllerGet = async () => {
 		try {
-			const response = await fetch(`${apiUrl}/get`, {
+			const response = await fetch(`${apiUrl}/user/get`, {
 				method: "GET",
 			});
 			if (response.ok) {
@@ -15,7 +15,7 @@ const fetchControllerGet = async () => {
 	};
 const fetchControllerPut = async () => {
 		try {
-			const response = await fetch(`${apiUrl}/put`, {
+			const response = await fetch(`${apiUrl}/user/put`, {
 				method: "PUT",
 			});
 			if (response.ok) {
@@ -28,7 +28,7 @@ const fetchControllerPut = async () => {
 	};
 const fetchControllerPost = async () => {
 		try {
-			const response = await fetch(`${apiUrl}/post`, {
+			const response = await fetch(`${apiUrl}/user/post`, {
 				method: "POST",
 			});
 			if (response.ok) {
@@ -41,7 +41,7 @@ const fetchControllerPost = async () => {
 	};
 const fetchControllerDelete = async () => {
 		try {
-			const response = await fetch(`${apiUrl}/delete`, {
+			const response = await fetch(`${apiUrl}/user/delete`, {
 				method: "DELETE",
 			});
 			if (response.ok) {
