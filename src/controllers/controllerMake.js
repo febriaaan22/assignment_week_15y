@@ -1,8 +1,8 @@
 const apiUrl = 'https://tiny-pear-chimpanzee-garb.cyclic.app'
 
-const fetchControllerGet = async () => {
+const fetchControllerGety = async () => {
 		try {
-			const response = await fetch(`${apiUrl}/user/gety`, {
+			const response = await fetch(`${apiUrl}/usery/gety`, {
 				method: "GET",
 			});
 			if (response.ok) {
@@ -13,22 +13,9 @@ const fetchControllerGet = async () => {
             console.log(error)
 		}
 	};
-const fetchControllerPut = async () => {
+const fetchControllerPosty = async () => {
 		try {
-			const response = await fetch(`${apiUrl}/user/puty`, {
-				method: "PUT",
-			});
-			if (response.ok) {
-				const data = await response.json();
-				console.log(data.message);
-			} 
-		} catch (error) {
-            console.log(error)
-		}
-	};
-const fetchControllerPost = async () => {
-		try {
-			const response = await fetch(`${apiUrl}/user/posty`, {
+			const response = await fetch(`${apiUrl}/usery/posty`, {
 				method: "POST",
 			});
 			if (response.ok) {
@@ -39,9 +26,22 @@ const fetchControllerPost = async () => {
             console.log(error)
 		}
 	};
-const fetchControllerDelete = async () => {
+const fetchControllerPuty = async () => {
 		try {
-			const response = await fetch(`${apiUrl}/user/deletey`, {
+			const response = await fetch(`${apiUrl}/usery/puty`, {
+				method: "PUT",
+			});
+			if (response.ok) {
+				const data = await response.json();
+				console.log(data.message);
+			} 
+		} catch (error) {
+            console.log(error)
+		}
+	};
+const fetchControllerDeletey = async () => {
+		try {
+			const response = await fetch(`${apiUrl}/usery/deletey`, {
 				method: "DELETE",
 			});
 			if (response.ok) {
@@ -52,4 +52,4 @@ const fetchControllerDelete = async () => {
             console.log(error)
 		}
 	};
-export { fetchControllerGet, fetchControllerPut, fetchControllerPost, fetchControllerDelete };
+export { fetchControllerGety, fetchControllerPuty, fetchControllerPosty, fetchControllerDeletey };
