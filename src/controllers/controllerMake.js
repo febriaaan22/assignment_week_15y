@@ -1,8 +1,8 @@
-const apiUrl = 'https://tiny-pear-chimpanzee-garb.cyclic.app'
+const apiUrl = 'https://plain-slacks-elk.cyclic.app'
 
-const fetchControllerGety = async () => {
+const fetchControllerGet = async () => {
 		try {
-			const response = await fetch(`${apiUrl}/usery/gety`, {
+			const response = await fetch(`${apiUrl}/user/get`, {
 				method: "GET",
 			});
 			if (response.ok) {
@@ -13,22 +13,9 @@ const fetchControllerGety = async () => {
             console.log(error)
 		}
 	};
-const fetchControllerPosty = async () => {
+const fetchControllerPut = async () => {
 		try {
-			const response = await fetch(`${apiUrl}/usery/posty`, {
-				method: "POST",
-			});
-			if (response.ok) {
-				const data = await response.json();
-				console.log(data.message);
-			} 
-		} catch (error) {
-            console.log(error)
-		}
-	};
-const fetchControllerPuty = async () => {
-		try {
-			const response = await fetch(`${apiUrl}/usery/puty`, {
+			const response = await fetch(`${apiUrl}/user/put`, {
 				method: "PUT",
 			});
 			if (response.ok) {
@@ -39,9 +26,22 @@ const fetchControllerPuty = async () => {
             console.log(error)
 		}
 	};
-const fetchControllerDeletey = async () => {
+const fetchControllerPost = async () => {
 		try {
-			const response = await fetch(`${apiUrl}/usery/deletey`, {
+			const response = await fetch(`${apiUrl}/user/post`, {
+				method: "POST",
+			});
+			if (response.ok) {
+				const data = await response.json();
+				console.log(data.message);
+			} 
+		} catch (error) {
+            console.log(error)
+		}
+	};
+const fetchControllerDelete = async () => {
+		try {
+			const response = await fetch(`${apiUrl}/user/delete`, {
 				method: "DELETE",
 			});
 			if (response.ok) {
@@ -52,4 +52,4 @@ const fetchControllerDeletey = async () => {
             console.log(error)
 		}
 	};
-export { fetchControllerGety, fetchControllerPuty, fetchControllerPosty, fetchControllerDeletey };
+export { fetchControllerGet, fetchControllerPut, fetchControllerPost, fetchControllerDelete };
