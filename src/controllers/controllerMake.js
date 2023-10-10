@@ -1,4 +1,4 @@
-const apiUrl = 'https://plain-slacks-elk.cyclic.app'
+const apiUrl = 'https://assignment-backend-15.vercel.app'
 
 const fetchControllerGety = async () => {
 		try {
